@@ -6,3 +6,4 @@ wget https://gist.githubusercontent.com/nnarain/4c925a06290d5659d9d2a1391a77373a
 sed -i 's/robbyrussell/agnoster-newline/g' ~/.zshrc
 
 echo "source /opt/ros/${ROS_DISTRO}/setup.zsh"
+echo "zsh" >> ~/.bashrc
