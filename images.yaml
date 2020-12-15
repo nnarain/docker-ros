@@ -1,0 +1,19 @@
+meta:
+  user: nnarain
+images:
+  # ROS1 images
+  - name: ros-base
+    dockerfile: ros1/base/Dockerfile
+    platform: linux/amd64,linux/arm64
+  - name: ros-desktop
+    dockerfile: ros1/desktop/Dockerfile
+  - name: ros-dev
+    dockerfile: ros1/dev/Dockerfile
+  # ROS2 images
+  - name: ros2-base
+    dockerfile: ros2/base/Dockerfile
+    platform: linux/amd64,linux/arm64
+  - name: ros2-desktop
+    dockerfile: ros2/desktop/Dockerfile
+  - name: ros2-dev
+    dockerfile: ros2/dev/Dockerfile
