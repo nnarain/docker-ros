@@ -6,6 +6,7 @@ RUN echo 'Etc/UTC' > /etc/timezone && \
     apt-get install -q -y --no-install-recommends tzdata && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Gazebo packages
+# Install desktop tools packages
 RUN apt-get update \
-    && apt-get install -y ros-${ROS_DISTRO}-gazebo-ros-pkgs
+    && apt-get install -y ros-${ROS_DISTRO}-gazebo-ros-pkgs \
+    && apt-get install -y ros-${ROS_DISTRO}-rviz
