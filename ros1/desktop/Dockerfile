@@ -9,4 +9,5 @@ RUN echo 'Etc/UTC' > /etc/timezone && \
 # Install desktop tools packages
 RUN apt-get update \
     && apt-get install -y ros-${ROS_DISTRO}-gazebo-ros-pkgs \
-    && apt-get install -y ros-${ROS_DISTRO}-rviz
+    && apt-get install -y ros-${ROS_DISTRO}-rviz \
+	&& apt-get install -y ros-${ROS_DISTRO}-rqt ros-${ROS_DISTRO}-rqt-common-plugins
