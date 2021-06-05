@@ -12,4 +12,4 @@ RUN echo 'Etc/UTC' > /etc/timezone && \
 # Install Gazebo packages
 RUN apt-get update \
     && apt-get install -y ros-${ROS_DISTRO}-gazebo-ros-pkgs \
-    && apt-get install -y ros-${ROS_DISTRO}-rviz
+    && apt-get install -y ros-${ROS_DISTRO}-rviz2
