@@ -5,10 +5,12 @@ ARG ROS_DISTRO=jazzy
 
 FROM ros:${ROS_DISTRO}
 
-# Install common development tools
+# Install common development tools and ros2_control
 RUN apt-get update && apt-get install -y \
     python3-pip \
     git \
+    ros-${ROS_DISTRO}-ros2-control \
+    ros-${ROS_DISTRO}-ros2-controllers \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up ROS environment
