@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - develop
+  schedule:
+    - cron: '0 0 * * 0'  # Run every Sunday at midnight UTC
   workflow_dispatch:
 
 env:
