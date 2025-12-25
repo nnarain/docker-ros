@@ -11,6 +11,9 @@ RUN apt-get update && apt-get install -y \
     git \
     ros-${ROS_DISTRO}-ros2-control \
     ros-${ROS_DISTRO}-ros2-controllers \
+    iproute2 \ 
+    can-utils \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up ROS environment
