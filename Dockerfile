@@ -3,7 +3,7 @@
 
 ARG ROS_DISTRO=jazzy
 
-FROM ros:${ROS_DISTRO}
+FROM ros:${ROS_DISTRO}-desktop
 
 # Install common development tools and ros2_control
 RUN apt-get update && apt-get install -y \
